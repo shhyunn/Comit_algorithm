@@ -1,0 +1,33 @@
+isl1 = str(input())
+isl2 = str(input())
+isl3 = str(input())
+isl4 = str(input())
+isl5 = str(input())
+
+s_isl1 = list(isl1)
+s_isl2 = list(isl2)
+s_isl3 = list(isl3)
+s_isl4 = list(isl4)
+s_isl5 = list(isl5)
+
+max_s_isl = max(len(s_isl1), len(s_isl2), len(s_isl3), len(s_isl4), len(s_isl5))
+final_s_isl = []
+
+for i in range(max_s_isl):
+    if i < len(s_isl1) and s_isl1[i]:
+        final_s_isl.append(s_isl1[i])
+
+    if i < len(s_isl2) and s_isl2[i]:
+        final_s_isl.append(s_isl2[i])
+
+    if i < len(s_isl3) and s_isl3[i]:
+        final_s_isl.append(s_isl3[i])
+
+    if i < len(s_isl4) and s_isl4[i]:
+        final_s_isl.append(s_isl4[i])
+
+    if i < len(s_isl5) and s_isl5[i]:
+        final_s_isl.append(s_isl5[i])
+
+aaaaa = ''.join(final_s_isl)
+print(aaaaa)
