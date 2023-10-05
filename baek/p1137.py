@@ -1,0 +1,5 @@
+word = input()
+word.lower()
+word_list = list(word)
+word_list.sort()
+print(word_list)
