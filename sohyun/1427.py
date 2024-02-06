@@ -1,0 +1,5 @@
+strr = str(input())
+lst = list(strr)
+lst.sort(reverse=True)
+res = "".join(lst)
+print(res)
