@@ -2,6 +2,14 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
+
+dp = [1]*10
+for i in range(n-1):
+    for j in range(1,10):
+        dp[j] += dp[j-1]
+print(sum(dp)%10007)
+
+'''
 dp = [1] * 10 #0부터 9까지 끝나는 오르막 수 개수, 초기에 1로 설정
 
 for i in range(n-1):#n이 2일 경우
@@ -16,3 +24,4 @@ for i in range(n-1):#n이 2일 경우
         #dp[0] = 1, dp[1] = 2, dp[2] = 3, dp[3] = 4
 
 print(sum(dp) % 10007)
+'''
